@@ -1,0 +1,11 @@
+version: '3'
+services:
+  msb-database:
+    image: 192.168.20.37:9002/mysql/mysql-server:5.7.26
+    container_name: mysql2
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_USER: micro
+      MYSQL_PASSWORD: Taigle123!@#
+    ports:
+      - 3310:3306
